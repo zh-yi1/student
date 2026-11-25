@@ -1,0 +1,451 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-11-18T06:27:22.695Z",
+  "target": "Windows x64",
+  "purpose": "Media runtime files to retain in the portable application; Node and the launcher are packaged separately.",
+  "requiredDirectories": [
+    "data/browsers/chromium-1255",
+    "data/browsers/ffmpeg-1013",
+    "data/browsers/winldd-1007",
+    "data/models/kokoro-multi-lang-v1_1",
+    "public/fonts",
+    "node_modules/playwright",
+    "node_modules/playwright-core",
+    "node_modules/sherpa-onnx-node",
+    "node_modules/sherpa-onnx-win-x64",
+    "node_modules/ffmpeg-static",
+    "node_modules/ffprobe-static",
+    "node_modules/tsx",
+    "node_modules/@esbuild/win32-x64"
+  ],
+  "packages": [
+    {
+      "name": "Chrome for Testing (bundled Chromium)",
+      "version": "159.0.8154.6",
+      "playwrightRevision": 1255,
+      "source": "https://cdn.playwright.dev/builds/cft/159.0.8154.6/win64/chrome-win64.zip",
+      "licenses": [
+        "Chromium-credits.html",
+        "Chromium-terms.html"
+      ]
+    },
+    {
+      "name": "Playwright",
+      "version": "1.65.1",
+      "source": "https://github.com/microsoft/playwright",
+      "license": "Apache-2.0; bundled dependency licenses retained in node_modules",
+      "licenses": [
+        "Playwright-LICENSE.txt",
+        "Playwright-NOTICE.txt",
+        "Playwright-ThirdPartyNotices.txt"
+      ]
+    },
+    {
+      "name": "sherpa-onnx",
+      "version": "2.0.1",
+      "source": "https://github.com/k2-fsa/sherpa-onnx/releases/tag/v2.0.1",
+      "license": "Apache-2.0",
+      "licenses": [
+        "sherpa-onnx-LICENSE.txt"
+      ]
+    },
+    {
+      "name": "ONNX Runtime",
+      "version": "1.28.2",
+      "source": "https://github.com/csukuangfj/onnxruntime-libs/releases/tag/v1.28.2",
+      "license": "MIT and included third-party notices",
+      "licenses": [
+        "onnxruntime-LICENSE.txt",
+        "onnxruntime-ThirdPartyNotices.txt"
+      ]
+    },
+    {
+      "name": "Kokoro bilingual model",
+      "version": "multi-lang-v1_1",
+      "source": "https://github.com/k2-fsa/sherpa-onnx/releases/download/tts-models/kokoro-multi-lang-v1_1.tar.bz2",
+      "license": "Apache-2.0; espeak-ng data GPL-3.0-or-later",
+      "licenses": [
+        "Kokoro-LICENSE.txt",
+        "espeak-ng-COPYING.txt"
+      ]
+    },
+    {
+      "name": "Noto Sans SC variable font",
+      "source": "https://github.com/google/fonts/tree/main/ofl/notosanssc",
+      "license": "SIL Open Font License 1.1",
+      "licenses": [
+        "NotoSansSC-OFL.txt"
+      ]
+    },
+    {
+      "name": "FFmpeg static executable",
+      "version": "6.1.1-essentials_build-www.gyan.dev",
+      "source": "https://github.com/FFmpeg/FFmpeg/commit/e38092ef93",
+      "license": "GPL-3.0",
+      "wrapperVersion": "5.3.0",
+      "licenses": [
+        "FFmpeg-GPL-3.0.txt",
+        "FFmpeg-build-README.txt",
+        "ffmpeg-static-LICENSE.txt"
+      ]
+    },
+    {
+      "name": "FFprobe static executable",
+      "version": "4.0.2",
+      "source": "https://github.com/FFmpeg/FFmpeg/tree/n4.0.2",
+      "license": "GPL-3.0 (binary); MIT (ffprobe-static wrapper)",
+      "wrapperVersion": "3.1.0",
+      "licenses": [
+        "FFmpeg-GPL-3.0.txt",
+        "ffprobe-static-LICENSE.txt"
+      ]
+    }
+  ],
+  "nativeAudit": {
+    "imports": [
+      {
+        "file": "node_modules/sherpa-onnx-win-x64/onnxruntime.dll",
+        "machine": "8664",
+        "imports": [
+          "KERNEL32.dll",
+          "ADVAPI32.dll",
+          "api-ms-win-core-path-l1-1-0.dll",
+          "dbghelp.dll",
+          "SETUPAPI.dll",
+          "dxgi.dll"
+        ],
+        "delayImports": []
+      },
+      {
+        "file": "node_modules/sherpa-onnx-win-x64/onnxruntime_providers_shared.dll",
+        "machine": "8664",
+        "imports": [
+          "KERNEL32.dll"
+        ],
+        "delayImports": []
+      },
+      {
+        "file": "node_modules/sherpa-onnx-win-x64/sherpa-onnx-c-api.dll",
+        "machine": "8664",
+        "imports": [
+          "onnxruntime.dll",
+          "KERNEL32.dll"
+        ],
+        "delayImports": []
+      },
+      {
+        "file": "node_modules/sherpa-onnx-win-x64/sherpa-onnx-cxx-api.dll",
+        "machine": "8664",
+        "imports": [
+          "sherpa-onnx-c-api.dll",
+          "KERNEL32.dll"
+        ],
+        "delayImports": []
+      },
+      {
+        "file": "node_modules/sherpa-onnx-win-x64/sherpa-onnx.node",
+        "machine": "8664",
+        "imports": [
+          "sherpa-onnx-c-api.dll",
+          "KERNEL32.dll"
+        ],
+        "delayImports": [
+          "node.exe"
+        ]
+      },
+      {
+        "file": "data/browsers/chromium-1255/chrome-win64/chrome.exe",
+        "machine": "8664",
+        "imports": [
+          "chrome_elf.dll",
+          "KERNEL32.dll",
+          "ntdll.dll",
+          "VERSION.dll"
+        ],
+        "delayImports": [
+          "ADVAPI32.dll",
+          "dbghelp.dll",
+          "USER32.dll",
+          "SHELL32.dll",
+          "ole32.dll",
+          "WINMM.dll",
+          "SHLWAPI.dll",
+          "api-ms-win-core-synch-l1-2-0.dll",
+          "api-ms-win-core-winrt-l1-1-0.dll",
+          "WINHTTP.dll",
+          "USERENV.dll",
+          "api-ms-win-power-base-l1-1-0.dll"
+        ]
+      },
+      {
+        "file": "data/browsers/chromium-1255/chrome-win64/chrome.dll",
+        "machine": "8664",
+        "imports": [
+          "WINMM.dll",
+          "KERNEL32.dll",
+          "WS2_32.dll",
+          "CRYPT32.dll",
+          "VERSION.dll",
+          "ntdll.dll",
+          "chrome_elf.dll",
+          "DWrite.dll"
+        ],
+        "delayImports": [
+          "USER32.dll",
+          "ole32.dll",
+          "ADVAPI32.dll",
+          "dbghelp.dll",
+          "bcrypt.dll",
+          "IPHLPAPI.DLL",
+          "pdh.dll",
+          "MMDevAPI.DLL",
+          "dxgi.dll",
+          "GDI32.dll",
+          "api-ms-win-core-handle-l1-1-0.dll",
+          "MFPlat.DLL",
+          "d3d11.dll",
+          "PROPSYS.dll",
+          "OLEAUT32.dll",
+          "wevtapi.dll",
+          "MF.dll",
+          "MFReadWrite.dll",
+          "SHELL32.dll",
+          "USERENV.dll",
+          "NETAPI32.dll",
+          "Secur32.dll",
+          "COMCTL32.dll",
+          "OLEACC.dll",
+          "UIAutomationCore.DLL",
+          "WTSAPI32.dll",
+          "HID.DLL",
+          "SETUPAPI.dll",
+          "WINTRUST.dll",
+          "credui.dll",
+          "SHLWAPI.dll",
+          "urlmon.dll",
+          "WINHTTP.dll",
+          "NDFAPI.DLL",
+          "CRYPTUI.dll",
+          "dwmapi.dll",
+          "IMM32.dll",
+          "api-ms-win-core-winrt-l1-1-0.dll",
+          "api-ms-win-shcore-scaling-l1-1-1.dll",
+          "CFGMGR32.dll",
+          "api-ms-win-power-base-l1-1-0.dll",
+          "api-ms-win-core-winrt-string-l1-1-0.dll",
+          "tbs.dll",
+          "api-ms-win-core-realtime-l1-1-1.dll",
+          "ncrypt.dll",
+          "api-ms-win-power-setting-l1-1-0.dll",
+          "WINSPOOL.DRV",
+          "UxTheme.dll",
+          "d3d12.dll",
+          "dcomp.dll",
+          "api-ms-win-core-synch-l1-2-0.dll",
+          "bcryptprimitives.dll",
+          "WINUSB.DLL",
+          "COMDLG32.dll",
+          "bthprops.cpl",
+          "dhcpcsvc.DLL",
+          "WININET.dll",
+          "ESENT.dll"
+        ]
+      },
+      {
+        "file": "data/browsers/chromium-1255/chrome-win64/chrome_elf.dll",
+        "machine": "8664",
+        "imports": [
+          "KERNEL32.dll",
+          "VERSION.dll",
+          "ntdll.dll"
+        ],
+        "delayImports": [
+          "ADVAPI32.dll",
+          "dbghelp.dll",
+          "WINMM.dll",
+          "USER32.dll",
+          "ole32.dll",
+          "api-ms-win-core-winrt-l1-1-0.dll"
+        ]
+      },
+      {
+        "file": "data/browsers/chromium-1255/chrome-win64/vk_swiftshader.dll",
+        "machine": "8664",
+        "imports": [
+          "KERNEL32.dll",
+          "USER32.dll",
+          "GDI32.dll"
+        ],
+        "delayImports": []
+      },
+      {
+        "file": "data/browsers/chromium-1255/chrome-win64/vulkan-1.dll",
+        "machine": "8664",
+        "imports": [
+          "ADVAPI32.dll",
+          "KERNEL32.dll",
+          "CFGMGR32.dll"
+        ],
+        "delayImports": []
+      },
+      {
+        "file": "node_modules/ffmpeg-static/ffmpeg.exe",
+        "machine": "8664",
+        "imports": [
+          "ADVAPI32.dll",
+          "bcrypt.dll",
+          "CRYPT32.dll",
+          "GDI32.dll",
+          "IMM32.dll",
+          "IPHLPAPI.DLL",
+          "KERNEL32.dll",
+          "msvcrt.dll",
+          "ncrypt.dll",
+          "ole32.dll",
+          "OLEAUT32.dll",
+          "SETUPAPI.dll",
+          "SHELL32.dll",
+          "SHLWAPI.dll",
+          "USER32.dll",
+          "VERSION.dll",
+          "AVICAP32.dll",
+          "WINMM.dll",
+          "WS2_32.dll"
+        ],
+        "delayImports": []
+      },
+      {
+        "file": "node_modules/ffprobe-static/bin/win32/x64/ffprobe.exe",
+        "machine": "8664",
+        "imports": [
+          "ADVAPI32.dll",
+          "bcrypt.dll",
+          "CRYPT32.dll",
+          "GDI32.dll",
+          "IMM32.dll",
+          "KERNEL32.dll",
+          "msvcrt.dll",
+          "ole32.dll",
+          "OLEAUT32.dll",
+          "SHELL32.dll",
+          "SHLWAPI.dll",
+          "USER32.dll",
+          "VERSION.dll",
+          "AVICAP32.dll",
+          "WINMM.dll",
+          "WS2_32.dll"
+        ],
+        "delayImports": []
+      }
+    ],
+    "vcRuntimeDynamicImports": [],
+    "note": "Inspected PE imports/delay imports have no external VCRUNTIME/MSVCP dependency. Standard Windows system DLLs remain required; this is not a clean-VM compatibility claim."
+  },
+  "behavior": {
+    "portableEnvironment": "SPROUT_PORTABLE=1",
+    "systemBrowserFallback": false,
+    "windowsSpeechFallback": false,
+    "systemPythonRequired": false,
+    "systemNodeRequired": false,
+    "note": "The launcher supplies bundled Node. Cloud features need user-provided keys; no cloud key is needed for the local examples."
+  },
+  "verification": {
+    "node": "Invoked Node 24.13.0 explicitly; parent package supplies its own Node",
+    "path": "C:\\windows\\System32",
+    "browser": "data/browsers/chromium-1255/chrome-win64/chrome.exe",
+    "font": "public/fonts/NotoSansSC.ttf",
+    "voice": "kokoro",
+    "video": "work/portable-media-smoke/portable-smoke.mp4",
+    "duration": 5,
+    "streams": [
+      {
+        "codec_name": "h264",
+        "codec_type": "video",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "codec_name": "aac",
+        "codec_type": "audio"
+      }
+    ],
+    "note": "PATH contained only Windows System32. Real bundled Chromium rendering, embedded font, Kokoro synthesis and FFmpeg/FFprobe passed. Relocated package verification is performed separately."
+  },
+  "assets": [
+    {
+      "path": "data/models/kokoro-multi-lang-v1_1/model.onnx",
+      "bytes": 325561476,
+      "sha256": "99db0bc8fd0c5033d249fe922db16768b71b4a6b26cfd93d206fbf66c76efb5f"
+    },
+    {
+      "path": "data/models/kokoro-multi-lang-v1_1/voices.bin",
+      "bytes": 53790720,
+      "sha256": "e64a5a581d8c2a350d848f51c3121657cd83aa07ed6109172177345874a7244c"
+    },
+    {
+      "path": "public/fonts/NotoSansSC.ttf",
+      "bytes": 17772300,
+      "sha256": "a3041811a78c361b1de50f953c805e0244951c21c5bd412f7232ef0d899af0da"
+    },
+    {
+      "path": "node_modules/sherpa-onnx-win-x64/onnxruntime.dll",
+      "bytes": 17799168,
+      "sha256": "7f66f939a881baf4f46a2216496798edf4a1429878b646d12674aa62f27d8a25"
+    },
+    {
+      "path": "node_modules/sherpa-onnx-win-x64/onnxruntime_providers_shared.dll",
+      "bytes": 104960,
+      "sha256": "551d0e1fe4c227d8542314ba718d52f4379e0c7bfe729a37c59833a884e27b4d"
+    },
+    {
+      "path": "node_modules/sherpa-onnx-win-x64/sherpa-onnx-c-api.dll",
+      "bytes": 4294656,
+      "sha256": "97dab91a51a9ae279ef6e18936fef652b5ecb881d63880de883a16f1a63d15cb"
+    },
+    {
+      "path": "node_modules/sherpa-onnx-win-x64/sherpa-onnx-cxx-api.dll",
+      "bytes": 264192,
+      "sha256": "869d7c22ddc788f102f3d1850f738f31d31864e033640fddc8176b96bfac402b"
+    },
+    {
+      "path": "node_modules/sherpa-onnx-win-x64/sherpa-onnx.node",
+      "bytes": 697344,
+      "sha256": "62fdf07d99ecb56054d868a7cf21f994c1cc729814dcdefcaf32eab34f8cb1f7"
+    },
+    {
+      "path": "data/browsers/chromium-1255/chrome-win64/chrome.exe",
+      "bytes": 4261888,
+      "sha256": "9b5b0b9d91b08bc432f53ddf9946aaec7ab100b3f887819656c2ee63cde1757e"
+    },
+    {
+      "path": "data/browsers/chromium-1255/chrome-win64/chrome.dll",
+      "bytes": 317817856,
+      "sha256": "69c65164dc668d9ef7a3573465b59262eef36499b02bba5362bd7c661d00d4eb"
+    },
+    {
+      "path": "data/browsers/chromium-1255/chrome-win64/chrome_elf.dll",
+      "bytes": 2876416,
+      "sha256": "1b4996b109a82e9a6356085d4dd17537183b24e7c7a8cbc793251df01356c867"
+    },
+    {
+      "path": "data/browsers/chromium-1255/chrome-win64/vk_swiftshader.dll",
+      "bytes": 5595136,
+      "sha256": "c65d9d900c0c4507ecdae4cdfa2f3c52a8a7530b8ebb0a79f40925ac9f3ad3b2"
+    },
+    {
+      "path": "data/browsers/chromium-1255/chrome-win64/vulkan-1.dll",
+      "bytes": 940544,
+      "sha256": "cb5dc4e7b40074194d414efeaecdbb5c78906b8f1eac6a66896436b5ee4a13bf"
+    },
+    {
+      "path": "node_modules/ffmpeg-static/ffmpeg.exe",
+      "bytes": 82797568,
+      "sha256": "04e1307997530f9cf2fe35cba2ca7e8875ca91da02f89d6c7243df819c94ad00"
+    },
+    {
+      "path": "node_modules/ffprobe-static/bin/win32/x64/ffprobe.exe",
+      "bytes": 63059968,
+      "sha256": "4303ec85855340689b1f8aa5d9c1dc06ef3e3090682de3034edc3fca2b0798d5"
+    }
+  ]
+}

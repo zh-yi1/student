@@ -1,0 +1,75 @@
+{
+  "title": "读懂一家人的小分工",
+  "unitTitle": "Helping at home",
+  "source": "deepseek",
+  "sourceUrl": "https://www.pep.com.cn/zslth/yyptzy/xypep/4s/",
+  "scenes": [
+    {
+      "title": "先听原创小故事",
+      "text": "It is Saturday. Dad is cooking lunch. Mei sets the table. Her brother puts away the toys. Mei says, “We can help at home.” After lunch, they have time to play together.",
+      "narration": "It is Saturday. Dad is cooking lunch. Mei sets the table. Her brother puts away the toys. Mei says, “We can help at home.” After lunch, they have time to play together.",
+      "words": [
+        "Read",
+        "Think",
+        "Find evidence"
+      ],
+      "visual": "reading",
+      "prompt": "先听懂故事大意，再找人物和动作。",
+      "audio": {
+        "url": "/api/lesson-audio/lesson-4-c19d679f6743286b83a6d1aa7b6d2b1b.wav",
+        "source": "kokoro",
+        "duration": 9.693917
+      }
+    },
+    {
+      "title": "先抓整体情境",
+      "text": "先读一遍，回答谁在什么时间做事情。短文发生在星期六，一家人正在分工。遇到不懂的词，先联系前后动作，不急着逐字翻译。",
+      "narration": "先读一遍，回答谁在什么时间做事情。短文发生在星期六，一家人正在分工。遇到不懂的词，先联系前后动作，不急着逐字翻译。",
+      "words": [
+        "Saturday",
+        "family"
+      ],
+      "visual": "reading",
+      "prompt": "这段短文主要讲一家人吃什么，还是一家人怎样帮忙？",
+      "audio": {
+        "url": "/api/lesson-audio/lesson-4-22cdfe0282209e84751d8858f681d4d7.wav",
+        "source": "kokoro",
+        "duration": 13.226375
+      }
+    },
+    {
+      "title": "给每个人找证据",
+      "text": "做一个“人物—动作”小表：Dad 对应 cooking lunch；Mei 对应 sets the table；brother 对应 puts away the toys。答案要能在原文中指给别人看。",
+      "narration": "做一个“人物—动作”小表：Dad 对应 cooking lunch；Mei 对应 sets the table；brother 对应 puts away the toys。答案要能在原文中指给别人看。",
+      "words": [
+        "Dad → cook",
+        "Mei → set the table",
+        "brother → put away toys"
+      ],
+      "visual": "reading",
+      "prompt": "如果问谁收玩具，你会指向原文哪一句？",
+      "audio": {
+        "url": "/api/lesson-audio/lesson-4-5b746f983c09a228ee9a3eea5d5fb51a.wav",
+        "source": "kokoro",
+        "duration": 13.592417
+      }
+    },
+    {
+      "title": "由事实理解意义",
+      "text": "最后一句说他们午饭后有时间一起玩。我们可以据此讨论：一起分担事情，会给家庭带来什么？这是基于文本作理解，不是随意猜人物心情。",
+      "narration": "最后一句说他们午饭后有时间一起玩。我们可以据此讨论：一起分担事情，会给家庭带来什么？这是基于文本作理解，不是随意猜人物心情。",
+      "words": [
+        "help at home",
+        "play together"
+      ],
+      "visual": "reading",
+      "prompt": "请用中文说出一个事实和一个你由此得到的想法，并区分两者。",
+      "audio": {
+        "url": "/api/lesson-audio/lesson-4-66d050c5dcece95ff968237a59e5c470.wav",
+        "source": "kokoro",
+        "duration": 13.968292
+      }
+    }
+  ],
+  "preparedAt": "2026-11-18T09:52:29.744Z"
+}

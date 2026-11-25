@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "checkedAt": "2026-11-18T08:09:03.770Z",
+  "model": "qwen-image-2.1-turbo",
+  "source": "qwen",
+  "durationMs": 19081,
+  "imageBytes": 1504206,
+  "usage": {
+    "calls": 3,
+    "estimatedSettledCny": 0.1
+  },
+  "credentialIncluded": false,
+  "image": "examples/qwen-live-check.png"
+}

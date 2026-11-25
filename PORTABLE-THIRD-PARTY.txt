@@ -1,0 +1,46 @@
+Sprout 便携包：媒体资源与第三方说明
+目标：Windows x64。请保留随包 Node、完整 node_modules、data/browsers、
+data/models/kokoro-multi-lang-v1_1 和 public/fonts，不要只复制网页文件。
+完整路径、版本、来源、关键文件 SHA-256 及原生 DLL 检查见
+PORTABLE-MEDIA-MANIFEST.json。许可证收集在 third-party/media（源码目录为 licenses/media）。
+
+运行时不需要预装 Node、Python、Chrome 或 Edge。浏览器由 Playwright 官方下载器提供，
+真实语音由 sherpa-onnx 与本地 Kokoro 模型生成；视频由随包 FFmpeg 编码。
+便携模式禁止系统浏览器与 Windows SAPI 语音回退，缺少包内文件时检查会明确失败。
+中文 Noto Sans SC 字体直接嵌入截图页面，无需安装字体。
+语音模型已解压，因此运行不依赖 tar、Python 或模型下载工具。
+仍需要正常可用的 Windows x64 系统 API；未声称已在所有 Windows 版本或精简版上验证。
+PE 普通及延迟导入检查未发现 VCRUNTIME/MSVCP 动态依赖，因此本构建没有另设
+Visual C++ 安装步骤。具体导入列表可在 JSON 清单中核查。
+
+随包媒体组件：
+1. Chrome for Testing 159.0.8154.6（Playwright Chromium revision 1255）。
+   https://cdn.playwright.dev/builds/cft/159.0.8154.6/win64/chrome-win64.zip
+   原始 ABOUT、内置 chrome://credits 和 chrome://terms 已导出随包。
+2. Playwright 1.65.1：Apache-2.0。包内第三方依赖许可证见每个 lib/*.js.LICENSE。
+   https://github.com/microsoft/playwright
+3. sherpa-onnx 2.0.1：Apache-2.0。
+   https://github.com/k2-fsa/sherpa-onnx/releases/tag/v2.0.1
+4. ONNX Runtime 1.28.2：MIT，附第三方 notices；采用 sherpa 上游 Windows x64 构建。
+   https://github.com/csukuangfj/onnxruntime-libs/releases/tag/v1.28.2
+5. Kokoro multi-lang-v1_1：Apache-2.0；随附 espeak-ng 数据按其 GPL-3.0-or-later 许可保留。
+   https://github.com/k2-fsa/sherpa-onnx/releases/download/tts-models/kokoro-multi-lang-v1_1.tar.bz2
+   espeak-ng 源代码与数据：https://github.com/espeak-ng/espeak-ng
+6. Noto Sans SC：SIL Open Font License 1.1。字体版权及完整 OFL 随文件保留。
+   https://github.com/google/fonts/tree/main/ofl/notosanssc
+7. FFmpeg 6.1.1 essentials（gyan.dev 静态构建）：GPL v3。
+   对应源代码：https://github.com/FFmpeg/FFmpeg/commit/e38092ef93
+   构建配置及上游说明见 FFmpeg-build-README.txt、FFmpeg-version-build.txt。
+   ffmpeg-static 5.3.0 包装层采用 GPL-3.0-or-later。
+8. FFprobe 4.0.2 二进制采用 GPL v3（构建启用 --enable-gpl --enable-version3）；
+   ffprobe-static 3.1.0 JavaScript 包装层为 MIT，二者不可混为一个许可证。
+   对应源代码：https://github.com/FFmpeg/FFmpeg/tree/n4.0.2
+   构建配置见 FFprobe-version-build.txt。
+
+这些程序通过独立进程或其原生模块使用；本清单不修改任何第三方许可条款。
+随包完整 node_modules 中其他依赖原有 LICENSE / NOTICE 文件也应一并保留。
+保留上游版权、许可证、原始构建说明和源代码获取链接；重新分发时应继续提供这些材料。
+
+本机验收：严格 portable doctor 通过；PATH 只保留 Windows System32，仍完成
+包内 Chromium 截图、嵌入中文字体、真实 Kokoro 混合中英朗读和 5 秒 H264/AAC MP4。
+这条检查没有调用云端接口。云端 DeepSeek / Qwen 需要用户配置密钥，尚未实测。

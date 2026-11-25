@@ -1,0 +1,33 @@
+{
+  "name": "sprout-english-demo",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "node scripts/start.mjs dev",
+    "build": "next build",
+    "start": "node scripts/start.mjs start",
+    "worker": "tsx scripts/worker.ts",
+    "test": "tsx --test tests/*.test.ts tests/*.test.mjs",
+    "typecheck": "tsc --noEmit",
+    "setup:voice": "node scripts/setup-voice.mjs",
+    "check": "node scripts/check.mjs"
+  },
+  "dependencies": {
+    "next": "16.4.6",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "lucide-react": "^0.468.0",
+    "zod": "^4.0.0",
+    "ffmpeg-static": "5.3.0",
+    "ffprobe-static": "^3.1.0",
+    "sherpa-onnx-node": "2.0.1"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.0",
+    "@types/node": "^24.0.0",
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "tsx": "^4.20.0",
+    "playwright": "^1.56.0"
+  }
+}

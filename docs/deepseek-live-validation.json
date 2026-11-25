@@ -1,0 +1,81 @@
+{
+  "passed": true,
+  "testedAt": "2026-11-18T07:46:47.638Z",
+  "model": "deepseek-flash",
+  "provider": "https://api.deepseek.com",
+  "checks": [
+    "Real initial teaching reply",
+    "Real contextual response to a learner misconception",
+    "Real recognition of a synthetic original exercise image"
+  ],
+  "firstReplyMs": 1987,
+  "totalMs": 1585,
+  "usage": {
+    "calls": 3,
+    "settledCny": 0.004948,
+    "reservedEstimateCny": 0.172958
+  },
+  "transcript": [
+    {
+      "role": "user",
+      "text": "我想说她能帮助家人，应该说 She can help 还是 She can helps？请先讲这个区别。",
+      "source": "student"
+    },
+    {
+      "role": "assistant",
+      "text": "先讲区别：can 后面用动词原形，所以是 **She can help**，不是 She can helps。  \n再看你刚才的问题：**I can water the plants.** 这句是在说“我能做什么”，还是在问别人能不能做？你从哪里看出来？",
+      "source": "deepseek"
+    },
+    {
+      "role": "user",
+      "text": "我认为 She 后面都要加 s，所以我选 She can helps。",
+      "source": "student"
+    },
+    {
+      "role": "assistant",
+      "text": "你的想法我记下了：**She 后面都要加 s**。  \n不过这里有个小例外：**can 后面的动词不加 s**。  \n所以是 **She can help**，不是 She can helps。  \n先只记这一条：can 后面用原形。  \n你能把 **She can help** 读一遍，再说说 can 后面用原形还是加 s 吗？",
+      "source": "deepseek"
+    }
+  ],
+  "photo": {
+    "draft": {
+      "text": "She can ___ her family.",
+      "grade": 4,
+      "unit": "拍照导入",
+      "type": "choice",
+      "options": [
+        "help",
+        "helps",
+        "helping"
+      ],
+      "answer": "help",
+      "explanation": "情态动词can后接动词原形，故选help。",
+      "steps": [],
+      "skillId": "modal_can_base_verb",
+      "approved": false,
+      "source": "photo",
+      "phase": "practice"
+    },
+    "drafts": [
+      {
+        "text": "She can ___ her family.",
+        "grade": 4,
+        "unit": "拍照导入",
+        "type": "choice",
+        "options": [
+          "help",
+          "helps",
+          "helping"
+        ],
+        "answer": "help",
+        "explanation": "情态动词can后接动词原形，故选help。",
+        "steps": [],
+        "skillId": "modal_can_base_verb",
+        "approved": false,
+        "source": "photo",
+        "phase": "practice"
+      }
+    ],
+    "source": "deepseek"
+  }
+}

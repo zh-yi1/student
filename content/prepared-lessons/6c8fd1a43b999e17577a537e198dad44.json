@@ -1,0 +1,56 @@
+{
+  "title": "用行为认识朋友的特点",
+  "unitTitle": "Different friends",
+  "source": "deepseek",
+  "sourceUrl": "https://www.pep.com.cn/zslth/yyptzy/xypep/5s/",
+  "scenes": [
+    {
+      "title": "特点需要行为来支持",
+      "text": "朋友主动帮你搬书，可以用 helpful。说出一个具体行为，别人更容易理解你为什么这样介绍。",
+      "narration": "朋友主动帮你搬书，可以用 helpful。说出一个具体行为，别人更容易理解你为什么这样介绍。想一想：只知道一个人很高，能判断他一定 helpful 吗？",
+      "words": [
+        "helpful"
+      ],
+      "visual": "friends",
+      "prompt": "如果只知道一个人很高，能判断他一定 helpful 吗？为什么？",
+      "audio": {
+        "url": "/api/lesson-audio/lesson-5-6d037acd4e39a193528f6c3bb80ee817.wav",
+        "source": "kokoro",
+        "duration": 14.973917
+      }
+    },
+    {
+      "title": "不同不等于好坏",
+      "text": "quiet 可以描述安静的表现，active 可以描述积极参与活动的表现。喜欢安静阅读和喜欢运动都可以是朋友的特点，没有谁因此更好。",
+      "narration": "quiet 可以描述安静的表现，active 可以描述积极参与活动的表现。喜欢安静阅读和喜欢运动都可以是朋友的特点，没有谁因此更好。你能分别想出 quiet 和 active 可能出现的一个情境吗？",
+      "words": [
+        "quiet",
+        "active"
+      ],
+      "visual": "friends",
+      "prompt": "你能分别想出 quiet 和 active 可能出现的一个情境吗？",
+      "audio": {
+        "url": "/api/lesson-audio/lesson-5-24cf7c28aa7674accc545f9962d02aca.wav",
+        "source": "kokoro",
+        "duration": 19.921833
+      }
+    },
+    {
+      "title": "把词用于真实介绍",
+      "text": "先选一个你能举出证据的特点，再补充事实。例如：Ming is helpful. He carries books for our group. 这是原创示例句。",
+      "narration": "先选一个你能举出证据的特点，再补充事实。例如：Ming is helpful. He carries books for our group. 请选择一个特点，用中文说明你会用哪件事作为证据。",
+      "words": [
+        "Ming is helpful.",
+        "He carries books."
+      ],
+      "visual": "friends",
+      "prompt": "请选择一个特点，用中文说明你会用哪件事作为证据。",
+      "audio": {
+        "url": "/api/lesson-audio/lesson-5-c27c8f0ec5c111b81d8ed8ce6cbfd653.wav",
+        "source": "kokoro",
+        "duration": 13.306167
+      }
+    }
+  ],
+  "preparedAt": "2026-11-18T09:53:21.798Z"
+}

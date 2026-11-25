@@ -1,0 +1,73 @@
+{
+  "title": "不同的朋友怎样相互帮助",
+  "unitTitle": "Different friends",
+  "source": "deepseek",
+  "sourceUrl": "https://www.pep.com.cn/zslth/yyptzy/xypep/5s/",
+  "scenes": [
+    {
+      "title": "先听原创小故事",
+      "text": "Nina likes reading. Omar likes running. On Friday, they make a class poster. Nina writes the words. Omar draws the pictures. They listen to each other. The poster is ready, and both friends are happy.",
+      "narration": "Nina likes reading. Omar likes running. On Friday, they make a class poster. Nina writes the words. Omar draws the pictures. They listen to each other. The poster is ready, and both friends are happy.",
+      "words": [
+        "Read",
+        "Think",
+        "Find evidence"
+      ],
+      "visual": "reading",
+      "prompt": "先听懂故事大意，再找人物和动作。",
+      "audio": {
+        "url": "/api/lesson-audio/lesson-5-168c421afccc7e43156473806a4f8643.wav",
+        "source": "kokoro",
+        "duration": 11.569833
+      }
+    },
+    {
+      "title": "先找相同与不同",
+      "text": "先把 Nina 和 Omar 分两栏，记录各自喜欢什么。再找他们一起做的事：制作班级海报。不同爱好与共同任务可以同时存在。",
+      "narration": "先把Nina和Omar分两栏，记录各自喜欢什么。再找他们一起做的事：制作班级海报。不同爱好与共同任务可以同时存在。",
+      "words": [
+        "friends"
+      ],
+      "visual": "reading",
+      "prompt": "他们各自喜欢什么？这次共同的目标是什么？",
+      "audio": {
+        "url": "/api/lesson-audio/lesson-5-d672b566effca0bbdcc856e02a471464.wav",
+        "source": "kokoro",
+        "duration": 12.939292
+      }
+    },
+    {
+      "title": "把分工与证据对应",
+      "text": "Nina writes the words 是写文字，Omar draws the pictures 是画图。问谁做什么时，回到这些明确的行为句。",
+      "narration": "Nina writes the words是写文字，Omar draws the pictures是画图。问谁做什么时，回到这些明确的行为句。",
+      "words": [
+        "Find the action.",
+        "Find the evidence."
+      ],
+      "visual": "reading",
+      "prompt": "如果有人说 Omar 写文字，你会用原文哪一句帮他修正？",
+      "audio": {
+        "url": "/api/lesson-audio/lesson-5-0bbfe19db5f05abe133bbbf8ba45893c.wav",
+        "source": "kokoro",
+        "duration": 9.40125
+      }
+    },
+    {
+      "title": "由合作过程理解主题",
+      "text": "listen to each other 说明他们愿意听对方的想法。我们可以据此讨论合作为什么顺利，但不能因为 Nina 喜欢阅读就断言她一定安静。",
+      "narration": "listen to each other说明他们愿意听对方的想法。可以据此讨论合作为什么顺利，但不能因为Nina喜欢阅读就断言她一定安静。请跟读：They listen to each other.",
+      "words": [
+        "different",
+        "together"
+      ],
+      "visual": "reading",
+      "prompt": "哪句话能支持“他们尊重彼此的想法”？哪一种性格判断还缺少证据？",
+      "audio": {
+        "url": "/api/lesson-audio/lesson-5-de4b2321dd1552d30a913d6a886373d1.wav",
+        "source": "kokoro",
+        "duration": 14.641
+      }
+    }
+  ],
+  "preparedAt": "2026-11-18T09:55:05.214Z"
+}

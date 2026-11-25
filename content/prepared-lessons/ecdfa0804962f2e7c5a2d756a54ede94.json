@@ -1,0 +1,57 @@
+{
+  "title": "在动作中理解家务词组",
+  "unitTitle": "Helping at home",
+  "source": "deepseek",
+  "sourceUrl": "https://www.pep.com.cn/zslth/yyptzy/xypep/4s/",
+  "scenes": [
+    {
+      "title": "先看正在做什么",
+      "text": "想象晚饭前，你把碗和勺放到桌上。我们用 set the table 表示摆好餐具。不要把它逐字理解成“设置桌子”。",
+      "narration": "想象晚饭前，你把碗和勺放到桌上。我们用 set the table 表示摆好餐具。不要把它逐字理解成“设置桌子”。",
+      "words": [
+        "set the table"
+      ],
+      "visual": "table",
+      "prompt": "如果桌上已经摆好碗和勺，你觉得这项任务完成了吗？",
+      "audio": {
+        "url": "/api/lesson-audio/lesson-4-f71249d42026cbecfb93d8012bffc702.wav",
+        "source": "kokoro",
+        "duration": 10.827833
+      }
+    },
+    {
+      "title": "用动作把词组记住",
+      "text": "water the plants 是给植物浇水；put away the toys 是把玩具收好。试着做动作，再说整个词组。词组比孤立背一个词更能帮助你表达。",
+      "narration": "water the plants 是给植物浇水；put away the toys 是把玩具收好。试着做动作，再说整个词组。词组比孤立背一个词更能帮助你表达。",
+      "words": [
+        "water the plants",
+        "put away the toys"
+      ],
+      "visual": "plant",
+      "prompt": "拿起水壶给花浇水时，你会选择哪一个词组？",
+      "audio": {
+        "url": "/api/lesson-audio/lesson-4-2a92b8a1995382b71e45da6a5f9fcd28.wav",
+        "source": "kokoro",
+        "duration": 13.355167
+      }
+    },
+    {
+      "title": "把词组放回自己的生活",
+      "text": "选择你实际能做的一件事，连成 I can ...。例如：I can put away the toys. 只需用一个你理解的词组。",
+      "narration": "选择你实际能做的一件事，连成 I can ...。例如：I can put away the toys. 只需用一个你理解的词组。",
+      "words": [
+        "I",
+        "can",
+        "put away the toys."
+      ],
+      "visual": "table",
+      "prompt": "今晚你能做哪件小事？试着用 I can 开头。",
+      "audio": {
+        "url": "/api/lesson-audio/lesson-4-4c8ee22f691690658419103b46e66588.wav",
+        "source": "kokoro",
+        "duration": 9.598042
+      }
+    }
+  ],
+  "preparedAt": "2026-11-18T09:50:43.071Z"
+}

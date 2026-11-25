@@ -1,0 +1,46 @@
+[
+  {
+    "filename": "grade-4-story-kokoro.mp4",
+    "duration": 23.79,
+    "voiceSource": "kokoro",
+    "contentSource": "sample",
+    "jobId": "8a6965a9-d50f-416e-be34-8926c814a44d",
+    "createdAt": "2026-11-18T04:18:38.691Z",
+    "completedAt": "2026-11-18T04:19:55.435Z",
+    "elapsedSeconds": 76.744,
+    "codecs": "H.264 + AAC"
+  },
+  {
+    "filename": "grade-5-story-kokoro.mp4",
+    "duration": 28.362,
+    "voiceSource": "kokoro",
+    "contentSource": "sample",
+    "jobId": "ae8f53ce-a05e-4bd8-966f-71b96ad86ab0",
+    "createdAt": "2026-11-18T04:21:11.347Z",
+    "completedAt": "2026-11-18T04:22:29.972Z",
+    "elapsedSeconds": 78.625,
+    "codecs": "H.264 + AAC"
+  },
+  {
+    "filename": "board-demo-system-voice.mp4",
+    "duration": 25.101,
+    "voiceSource": "demo-system-voice",
+    "contentSource": "sample",
+    "jobId": "247a99fd-8032-4e32-ae25-e61a330091a7",
+    "createdAt": "2026-11-18T03:59:14.978Z",
+    "completedAt": "2026-11-18T03:59:57.373Z",
+    "elapsedSeconds": 42.395,
+    "codecs": "H.264 + AAC"
+  },
+  {
+    "filename": "board-kokoro.mp4",
+    "duration": 18.706,
+    "voiceSource": "kokoro",
+    "contentSource": "sample",
+    "jobId": "3af38584-50cb-4f4b-b048-aa19d89c4eb3",
+    "createdAt": "2026-11-18T04:27:30.794Z",
+    "completedAt": "2026-11-18T04:28:26.817Z",
+    "elapsedSeconds": 56.023,
+    "codecs": "H.264 + AAC"
+  }
+]

@@ -1,0 +1,15 @@
+{
+  "id": "speech-0cdaab5461574fbcb020419bcdd43dec",
+  "url": "/api/media/speech-0cdaab5461574fbcb020419bcdd43dec.wav",
+  "source": "kokoro",
+  "duration": 3.795792,
+  "studentId": "sample",
+  "speed": 0.94,
+  "segments": [
+    {
+      "language": "en",
+      "speaker": 0
+    }
+  ],
+  "createdAt": "2026-11-18T04:15:02.650Z"
+}

@@ -1,0 +1,20 @@
+ONNX Runtime 1.28.2 redistribution notices
+
+LICENSE and ThirdPartyNotices.txt were extracted without modification from:
+https://github.com/csukuangfj/onnxruntime-libs/releases/download/v1.28.2/onnxruntime-win-x64-MT-Release-1.28.2.tar.bz2
+
+This is the upstream ONNX Runtime binary distribution used by sherpa-onnx.
+Release page: https://github.com/csukuangfj/onnxruntime-libs/releases/tag/v1.28.2
+Original project: https://github.com/microsoft/onnxruntime
+Build GIT_COMMIT_ID: 33ca9628233dc8f002435e868d4c2e9f82766ca1
+VERSION_NUMBER: 1.28.2
+Archive SHA256: cd7f757f7a38ce14238bc9198bee197a9430b42ec3ecadea3408dd2e832eb02e
+
+The archive's lib/onnxruntime.dll and the bundled
+node_modules/sherpa-onnx-win-x64/onnxruntime.dll are byte-identical:
+SHA256: 7f66f939a881baf4f46a2216496798edf4a1429878b646d12674aa62f27d8a25
+
+ONNX Runtime is MIT licensed; the included third-party notices describe its
+incorporated dependencies and their respective licenses. Preserve both files.
+
+Retrieved and verified: 2026-11-18

@@ -1,0 +1,60 @@
+{
+  "title": "说出我能帮什么忙",
+  "unitTitle": "Helping at home",
+  "source": "deepseek",
+  "sourceUrl": "https://www.pep.com.cn/zslth/yyptzy/xypep/4s/",
+  "scenes": [
+    {
+      "title": "先理解说话目的",
+      "text": "I can ... 用来表达自己能做的事。I can set the table. 是主动说自己可以摆餐具。",
+      "narration": "I can...用来表达自己能做的事。I can set the table.是主动说自己可以摆餐具。",
+      "words": [
+        "I",
+        "can",
+        "set the table."
+      ],
+      "visual": "table",
+      "prompt": "如果你愿意收好玩具，你可以怎样开口？",
+      "audio": {
+        "url": "/api/lesson-audio/lesson-4-2c3830a3b0e5fc7e262ac49b36bac65b.wav",
+        "source": "kokoro",
+        "duration": 7.762125
+      }
+    },
+    {
+      "title": "比较陈述和询问",
+      "text": "Can you water the plants? 把 Can 放在句首，是在询问对方。可以回答 Yes, I can. 或 No, I can’t.。表达要符合真实能力。",
+      "narration": "Can you water the plants?把Can放句首，是在询问对方。可以回答Yes, I can.或No, I can’t.。表达要符合真实能力。",
+      "words": [
+        "Can",
+        "you",
+        "water the plants?"
+      ],
+      "visual": "plant",
+      "prompt": "请把“我能浇花”换成向朋友询问能否浇花。",
+      "audio": {
+        "url": "/api/lesson-audio/lesson-4-aa8407ec21c301b131113358dc1c39c3.wav",
+        "source": "kokoro",
+        "duration": 11.763375
+      }
+    },
+    {
+      "title": "关注 can 后面的动作",
+      "text": "can 后面直接接动作原形：can help、can clean。即使主语换成 She，仍然说 She can help.，不用 helps。",
+      "narration": "can后面直接接动作原形：can help、can clean。即使主语换成She，仍然说She can help.，不用helps。",
+      "words": [
+        "She",
+        "can",
+        "help."
+      ],
+      "visual": "table",
+      "prompt": "She can cleans the desk. 里哪个词需要改一改？为什么？",
+      "audio": {
+        "url": "/api/lesson-audio/lesson-4-64dbc66c1a2efe2c1bb8459cf6ce04e7.wav",
+        "source": "kokoro",
+        "duration": 10.579667
+      }
+    }
+  ],
+  "preparedAt": "2026-11-18T09:51:24.942Z"
+}

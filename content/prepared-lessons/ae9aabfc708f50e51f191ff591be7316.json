@@ -1,0 +1,59 @@
+{
+  "title": "把特点、喜好和能力说清楚",
+  "unitTitle": "Different friends",
+  "source": "deepseek",
+  "sourceUrl": "https://www.pep.com.cn/zslth/yyptzy/xypep/5s/",
+  "scenes": [
+    {
+      "title": "先决定你要表达哪类信息",
+      "text": "She is kind. 描述特点；She likes drawing. 描述喜好；She can draw. 描述能力。喜欢做某事与能做好某事不是同一条信息。",
+      "narration": "先想清楚要说什么：She is kind. 说特点；She likes drawing. 说喜好；She can draw. 说能力。喜欢和擅长不一样哦。",
+      "words": [
+        "She is kind.",
+        "She likes drawing.",
+        "She can draw."
+      ],
+      "visual": "friends",
+      "prompt": "如果你只知道她喜欢画画，能直接断言她画得很好吗？",
+      "audio": {
+        "url": "/api/lesson-audio/lesson-5-000bbfe2a2baaad51aaacad904d12516.wav",
+        "source": "kokoro",
+        "duration": 10.6975
+      }
+    },
+    {
+      "title": "观察句子怎样连接",
+      "text": "is 后可以接特点词。likes 后可以接活动，如 reading。can 后接动作原形，如 read。先知道自己要表达的意思，再选句框。",
+      "narration": "看句子怎么连：is 后接特点词，likes 后接活动如 reading，can 后接动作原形如 read。先想意思，再选句子。",
+      "words": [
+        "is → kind",
+        "likes → reading",
+        "can → read"
+      ],
+      "visual": "friends",
+      "prompt": "表达“他会游泳”时，应选 He is ...、He likes ... 还是 He can ...？",
+      "audio": {
+        "url": "/api/lesson-audio/lesson-5-3f3cc3c22c2a817a80e9ebe19470e969.wav",
+        "source": "kokoro",
+        "duration": 13.500333
+      }
+    },
+    {
+      "title": "把两个人放在一起介绍",
+      "text": "可以分别说两个人的特点和喜好，再找共同点。原创示例：I like reading. My friend likes running. We help each other. 不需要让朋友和自己完全一样。",
+      "narration": "介绍两个人：I like reading. My friend likes running. We help each other. 朋友不必和你一样。说说你和朋友的不同，再想想能一起做什么。",
+      "words": [
+        "different friends",
+        "help each other"
+      ],
+      "visual": "friends",
+      "prompt": "请说出你和朋友一处不同，再说一件你们能一起做的事。",
+      "audio": {
+        "url": "/api/lesson-audio/lesson-5-95cdd84073cdab5b0dbf0ed24b57f6d8.wav",
+        "source": "kokoro",
+        "duration": 11.791417
+      }
+    }
+  ],
+  "preparedAt": "2026-11-18T09:54:14.214Z"
+}
